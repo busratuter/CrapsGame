@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+
+int main(){
+	
+	int zar1,zar2,zartoplam,puan;
+	
+	srand(time(NULL));
+
+	zar1 =  1 + rand()%6;
+	zar2 =  1 + rand()%6;
+	
+	printf("Birinci zar : %d\n", zar1);
+	printf("Ikinci zar : %d\n ",zar2);
+	zartoplam = zar1 + zar2;
+	printf("Zarlarin toplami = %d\n", zartoplam);
+	
+	if (zartoplam==7 || zartoplam==11){
+		
+		printf(" Tebrikler kazandiniz !!! \n");
+		
+	}
+	else if (zartoplam==2 || zartoplam==3 || zartoplam==12){
+		
+		printf(" Maalesef kaybettiniz ... \n");
+		
+	}
+	else {
+		puan=zartoplam;
+		printf("Puaniniz : %d\n",puan);
+		
+	//	while(zartoplam != 7 || zartoplam == puan){
+			
+			zar1= 1 + rand() %6;
+    		zar2= 1 + rand() %6;
+  	 		zartoplam= zar1 + zar2;
+  	 		 
+   			 printf("Yeni puaniniz : %d\n",zartoplam);
+   			 
+			if(zartoplam==puan){
+     			printf("Oyunu kazandiniz, tebrikler!");
+     		 }	   
+     			   
+      		if(zartoplam == 7){
+      			printf("Oyunu kaybettiniz, tekrar deneyiniz!");
+      		 }
+      		
+			if(zartoplam != puan){
+      			printf("Oyunu kaybettiniz, tekrar deneyiniz!");
+     			   
+        }
+      		
+    			  
+        }
+        return 0;
+	}
