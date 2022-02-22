@@ -14,6 +14,7 @@ int main(){
 	
 	printf("Birinci zar : %d\n", zar1);
 	printf("Ikinci zar : %d\n ",zar2);
+	
 	zartoplam = zar1 + zar2;
 	printf("Zarlarin toplami = %d\n", zartoplam);
 	
@@ -34,25 +35,27 @@ int main(){
 	//	while(zartoplam != 7 || zartoplam == puan){
 			
 			zar1= 1 + rand() %6;
-    		zar2= 1 + rand() %6;
+    			zar2= 1 + rand() %6;
+			
   	 		zartoplam= zar1 + zar2;
   	 		 
-   			 printf("Yeni puaniniz : %d\n",zartoplam);
+   			printf("Yeni puaniniz : %d\n",zartoplam);
    			 
-			if(zartoplam==puan){
-     			printf("Oyunu kazandiniz, tebrikler!");
+				if(zartoplam==puan){
+				
+     				printf("Oyunu kazandiniz, tebrikler!");
      		 }	   
      			   
-      		if(zartoplam == 7){
-      			printf("Oyunu kaybettiniz, tekrar deneyiniz!");
-      		 }
+      				if(zartoplam == 7){
+				
+      				printf("Oyunu kaybettiniz, tekrar deneyiniz!");
+      		 	}
       		
-			if(zartoplam != puan){
-      			printf("Oyunu kaybettiniz, tekrar deneyiniz!");
-     			   
-        }
-      		
-    			  
-        }
-        return 0;
-	}
+				if(zartoplam != puan){
+				
+      				printf("Oyunu kaybettiniz, tekrar deneyiniz!");
+     		 		}	  
+        } // else blogu
+	
+return 0;
+}
